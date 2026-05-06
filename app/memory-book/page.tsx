@@ -1,4 +1,5 @@
 import { MemoryMapArchive } from "@/components/memory-map-archive";
+import { MemoryBookShareStrip } from "@/components/memory-book-share-strip";
 import { SectionTitle } from "@/components/section-title";
 import { memoryEntries } from "@/lib/mock-data";
 
@@ -15,6 +16,7 @@ export default function MemoryBookPage() {
       </section>
 
       <section className="space-y-8">
+        <MemoryBookShareStrip />
         <SectionTitle
           kicker="地点摘录"
           title="在地图之外散落的一些旅行摘迹。"

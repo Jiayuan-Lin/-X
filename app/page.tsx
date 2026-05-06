@@ -8,13 +8,6 @@ import { SectionTitle } from "@/components/section-title";
 import { SoftVisual } from "@/components/soft-visual";
 import { carrierShowcase, memoryEntries } from "@/lib/mock-data";
 
-const targetAudience = [
-  { label: "旅行爱好者", accent: "bg-[linear-gradient(135deg,#7C95E1,#B0C7FB)]" },
-  { label: "Z 世代", accent: "bg-[linear-gradient(135deg,#B0C7FB,#D0D1F9)]" },
-  { label: "个性主义者", accent: "bg-[linear-gradient(135deg,#D0D1F9,#EED6EC)]" },
-  { label: "高品质追求者", accent: "bg-[linear-gradient(135deg,#EED6EC,#F2E6F1)]" },
-];
-
 const steps = [
   {
     no: "01",
@@ -193,9 +186,9 @@ export default function HomePage() {
             品牌价值与定位
           </h2>
 
-          <div className="mt-10 grid gap-5 xl:grid-cols-[1fr_1fr]">
-            <div className="space-y-5">
-              <article className="surface rounded-[32px] bg-[linear-gradient(180deg,rgba(208,209,249,0.14),rgba(255,253,249,0.96))] p-6 md:p-8">
+          <div className="mt-10 grid gap-5 xl:grid-cols-[0.94fr_1.06fr] xl:items-stretch">
+            <div className="xl:flex">
+              <article className="surface h-full rounded-[32px] bg-[linear-gradient(180deg,rgba(208,209,249,0.14),rgba(255,253,249,0.96))] p-6 md:p-8 xl:flex xl:flex-col xl:justify-center">
                 <p className="text-[0.82rem] tracking-[0.16em] text-[color:var(--ink-soft)]">
                   BRAND IDENTITY
                 </p>
@@ -207,43 +200,16 @@ export default function HomePage() {
                   是旅行纪念与个性化定制的完美结合。将情感和回忆转化为有形的纪念品，每一件作品都是独一无二的旅行故事的有力呈现。
                 </p>
               </article>
-
-              <article className="surface rounded-[32px] bg-[linear-gradient(180deg,rgba(238,214,236,0.14),rgba(255,253,249,0.96))] p-6 md:p-8">
-                <p className="text-[0.82rem] tracking-[0.16em] text-[color:var(--ink-soft)]">
-                  TARGET AUDIENCE
-                </p>
-                <h3 className="mt-5 text-[1.2rem] font-medium tracking-[-0.02em] text-[color:var(--ink)] md:text-[1.5rem]">
-                  目标人群
-                </h3>
-                <div className="mt-8 flex flex-wrap gap-4">
-                  {targetAudience.map((item) => (
-                    <div
-                      key={item.label}
-                      className="inline-flex items-center gap-3 rounded-full border border-[rgba(220,205,191,0.54)] bg-[rgba(255,255,255,0.72)] px-5 py-3 shadow-[0_10px_22px_rgba(74,68,61,0.05)]"
-                    >
-                      <span
-                        className={`inline-flex h-4 w-4 rotate-[8deg] rounded-full border border-white/70 shadow-[0_4px_12px_rgba(74,68,61,0.08)] ${item.accent}`}
-                      />
-                      <span className="text-[13px] font-medium text-[color:var(--ink)] md:text-[14px]">
-                        {item.label}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-              </article>
             </div>
 
             <div className="space-y-5">
               <article className="surface rounded-[32px] bg-[linear-gradient(180deg,rgba(208,209,249,0.14),rgba(255,253,249,0.96))] p-6 md:p-8">
-                <p className="text-[0.82rem] tracking-[0.16em] text-[color:var(--ink-soft)]">
-                  COMPETITIVE ANALYSIS ・ POPS / PODS
-                </p>
                 <div className="mt-8 space-y-8">
                   <div>
                     <div className="flex items-center gap-3">
                       <span className="h-3.5 w-3.5 rounded-full bg-[rgba(176,199,251,0.95)]" />
                       <h3 className="text-[1rem] font-medium tracking-[0.06em] text-[color:var(--blue-deep)] md:text-[1.08rem]">
-                        POINT OF PARITY
+                        产品端
                       </h3>
                     </div>
                     <p className="mt-6 pl-6 text-[13px] leading-9 text-[color:var(--ink-soft)] md:text-[14px]">
@@ -257,7 +223,7 @@ export default function HomePage() {
                     <div className="flex items-center gap-3">
                       <span className="h-3.5 w-3.5 rounded-full bg-[rgba(238,214,236,0.95)]" />
                       <h3 className="text-[1rem] font-medium tracking-[0.06em] text-[color:var(--blue-deep)] md:text-[1.08rem]">
-                        POINT OF DIFFERENCE
+                        情感端
                       </h3>
                     </div>
                     <p className="mt-6 pl-6 text-[13px] leading-9 text-[color:var(--ink-soft)] md:text-[14px]">
